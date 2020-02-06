@@ -77,6 +77,15 @@ class App extends Component {
     each(tmpsp500, (item, index) => {
       dataTmp[index].pricesp500 = item.children[5].children[0].data;
     });
+    
+    // COTTON
+    const respCotton = await axios.get("https://stooq.pl/q/d/?s=ct.f");
+    const htmlCotton = respCotton.data;
+    const $Cotton = cheerio.load(htmlCotton);
+    const tmpCotton = $Cotton("#fth1 tbody tr");
+    each(tmpCotton, (item, index) => {
+      dataTmp[index].priceCotton = item.children[5].children[0].data;
+    });
 
     // SAVE DATA
     this.setState({ data: dataTmp });
@@ -116,6 +125,7 @@ class App extends Component {
               <td>GOLD</td>
               <td>EURUSD</td>
               <td>SP500</td>
+              <td>COTTON</td>
             </tr>
             {data.map((item, index) => {
               return (
@@ -141,6 +151,9 @@ class App extends Component {
                   </td>
                   <td className={this.getClass("pricesp500", index, item)}>
                     {item.pricesp500}
+                  </td>
+                  <td className={this.getClass("priceCotton", index, item)}>
+                    {item.priceCotton}
                   </td>
                 </tr>
               );
