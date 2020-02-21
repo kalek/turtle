@@ -6,28 +6,28 @@ import { each } from "lodash";
 import "./App.css";
 
 const AMOUNT_NUMBERS = 10;
-const INSTRUMENTS = [
-  "alr",
-  "ccc",
-  "cdr",
-  "cps",
-  "dnp",
-  "jsw",
-  "kgh",
-  "lpp",
-  "lts",
-  "mbk",
-  "opl",
-  "peo",
-  "pge",
-  "pgn",
-  "pkn",
-  "pko",
-  "ply",
-  "pzu",
-  "spl",
-  "tpe"
-];
+// const INSTRUMENTS = [
+//   "alr",
+//   "ccc",
+//   "cdr",
+//   "cps",
+//   "dnp",
+//   "jsw",
+//   "kgh",
+//   "lpp",
+//   "lts",
+//   "mbk",
+//   "opl",
+//   "peo",
+//   "pge",
+//   "pgn",
+//   "pkn",
+//   "pko",
+//   "ply",
+//   "pzu",
+//   "spl",
+//   "tpe"
+// ];
 const initialInstruments = {
   activeCard1: [],
   activeCard2: [],
