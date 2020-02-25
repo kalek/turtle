@@ -6,32 +6,162 @@ import { each } from "lodash";
 import "./App.css";
 
 const AMOUNT_NUMBERS = 10;
-// const INSTRUMENTS = [
-//   "alr",
-//   "ccc",
-//   "cdr",
-//   "cps",
-//   "dnp",
-//   "jsw",
-//   "kgh",
-//   "lpp",
-//   "lts",
-//   "mbk",
-//   "opl",
-//   "peo",
-//   "pge",
-//   "pgn",
-//   "pkn",
-//   "pko",
-//   "ply",
-//   "pzu",
-//   "spl",
-//   "tpe"
-// ];
+const WIG20 = [
+  "ALIOR-BANK",
+  "CCC",
+  "CD-PROJEKT",
+  "CYFROWY-POLSAT",
+  "DNP",
+  "JSW-JASTRZEBSKA-SPOLKA-WEGLOWA",
+  "KGHM",
+  "LPP",
+  "LOTOS",
+  "MBANK",
+  "ORANGE",
+  "PEKAO",
+  "PGE",
+  "PGNIG",
+  "PKN-ORLEN",
+  "PKO",
+  "PLY",
+  "PZU",
+  "SPL",
+  "TAURON"
+];
+
+const MWIG40 = [
+  "11-BIT-STUDIOS",
+  "ASSECO-POLAND",
+  "AMICA",
+  "ATT",
+  "BUDIMEX",
+  "BENEFIT-SYSTEMS",
+  "BANK-HANDLOWY",
+  "BNP",
+  "BORYSZEW",
+  "INTER-CARS",
+  "CIECH",
+  "CI-GAMES",
+  "CLNPHARMA",
+  "COMARCH",
+  "DVL",
+  "EAT",
+  "ECHO-INVESTMENT",
+  "ENEA",
+  "ENERGA",
+  "EUROCASH",
+  "FAMUR",
+  "FORTE",
+  "GPW",
+  "GTC",
+  "GETIN-HOLDING",
+  "ING-BANK-SLASKI",
+  "KERNEL",
+  "KRUK",
+  "KETY",
+  "LIVECHAT",
+  "BOGDANKA",
+  "MABION",
+  "BANK-MILLENNIUM",
+  "ORBIS",
+  "PKPCARGO",
+  "PLAYWAY",
+  "STALPRODUKT",
+  "TEN",
+  "VRG",
+  "WIRTUALNA-POLSKA"
+];
+
+const SWIG80 = [
+  "ATAL",
+  "ABE",
+  "ASSECO-BUSINESS-SOLUTIONS",
+  "ACG",
+  "AGORA",
+  "ALTUS",
+  "AMBRA",
+  "ALUMETAL",
+  "APR",
+  "APATOR",
+  "ARH",
+  "ASBISC",
+  "ASSECO-SOUTH-EASTERN-EUROPE",
+  "ASTARTA",
+  "ATM-GRUPA",
+  "BAHOLDING",
+  "BIOTON",
+  "BKM",
+  "BANK-OCHRONY-SRODOWISKA",
+  "BSC-DRUKARNIA-OPAKOWAN",
+  "COMP",
+  "COGNOR",
+  "CAPITAL-PARK",
+  "CORMAY",
+  "DAT",
+  "DEBICA",
+  "DOM-DEVELOPMENT",
+  "EKO-EXPORT",
+  "ELEKTROBUDOWA",
+  "ELEMENTAL-HOLDING",
+  "ENT",
+  "FERRO",
+  "IDEA-BANK",
+  "INDUSTRIAL-MILK-COMPANY",
+  "INSTAL-KRAKOW",
+  "KOGENERACJA",
+  "KRUSZWICA",
+  "LENTEX",
+  "MCI",
+  "MEDICALGORITHMICS",
+  "MGT",
+  "MLP-GROUP",
+  "MENNICA-POLSKA",
+  "MONNARI-TRADE",
+  "NETIA",
+  "NEUCA",
+  "NEWAG",
+  "OAT",
+  "OPONEO-PL",
+  "OVOSTAR",
+  "PEKABEX",
+  "POLICE",
+  "ROKITA",
+  "PRAIRIE-MINING-LIMITED",
+  "POLENERGIA",
+  "POLSKI-HOLDING-NIERUCHOMOSCI",
+  "POLNORD",
+  "PGS-SOFTWARE",
+  "POLIMEX",
+  "R22",
+  "RAINBOW-TOURS",
+  "RAFAKO",
+  "RVU",
+  "SEN",
+  "SNIEZKA",
+  "SLV",
+  "STOMIL-SANOK",
+  "SYNEKTIK",
+  "STALEXPORT-AUTOSTRADY",
+  "TIM",
+  "TOYA",
+  "TORPOL",
+  "TRAKCJA",
+  "UNIMOT-GAZ",
+  "VIGO-SYSTEM",
+  "VOXEL",
+  "VIVID-GAMES",
+  "WIELTON",
+  "WAWEL",
+  "ZEPAK"
+];
+
 const initialInstruments = {
   activeCard1: [],
   activeCard2: [],
-  activeCard3: []
+  activeCard3: [],
+  activeCard4: WIG20,
+  activeCard5: MWIG40,
+  activeCard6: SWIG80
 };
 
 class App extends Component {
@@ -144,6 +274,24 @@ class App extends Component {
               onClick={() => this.setState({ activeCard: 3 })}
             >
               KARTA 3
+            </li>
+            <li
+              className={activeCard === 4 ? "active" : null}
+              onClick={() => this.setState({ activeCard: 4 })}
+            >
+              WIG20
+            </li>
+            <li
+              className={activeCard === 5 ? "active" : null}
+              onClick={() => this.setState({ activeCard: 5 })}
+            >
+              MWIG40
+            </li>
+            <li
+              className={activeCard === 6 ? "active" : null}
+              onClick={() => this.setState({ activeCard: 6 })}
+            >
+              SWIG80
             </li>
           </ul>
           <div className="add-button">

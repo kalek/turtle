@@ -63,3 +63,7 @@ td {
   margin-left: 10px;
   cursor: pointer;
 }
+
+td {
+  white-space: break-word;
+}
