@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/turtle/static/css/main.0fb79260.chunk.css",
-    "main.js": "/turtle/static/js/main.e877f885.chunk.js",
-    "main.js.map": "/turtle/static/js/main.e877f885.chunk.js.map",
+    "main.css": "/turtle/static/css/main.72079cea.chunk.css",
+    "main.js": "/turtle/static/js/main.259f6506.chunk.js",
+    "main.js.map": "/turtle/static/js/main.259f6506.chunk.js.map",
     "runtime-main.js": "/turtle/static/js/runtime-main.39c114d1.js",
     "runtime-main.js.map": "/turtle/static/js/runtime-main.39c114d1.js.map",
     "static/js/2.59827435.chunk.js": "/turtle/static/js/2.59827435.chunk.js",
     "static/js/2.59827435.chunk.js.map": "/turtle/static/js/2.59827435.chunk.js.map",
     "index.html": "/turtle/index.html",
-    "precache-manifest.3644477df614dc7ad1b77240519e3673.js": "/turtle/precache-manifest.3644477df614dc7ad1b77240519e3673.js",
+    "precache-manifest.35f9addbc6145b3ef7e0afcb2828845b.js": "/turtle/precache-manifest.35f9addbc6145b3ef7e0afcb2828845b.js",
     "service-worker.js": "/turtle/service-worker.js",
-    "static/css/main.0fb79260.chunk.css.map": "/turtle/static/css/main.0fb79260.chunk.css.map",
+    "static/css/main.72079cea.chunk.css.map": "/turtle/static/css/main.72079cea.chunk.css.map",
     "static/js/2.59827435.chunk.js.LICENSE": "/turtle/static/js/2.59827435.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.39c114d1.js",
     "static/js/2.59827435.chunk.js",
-    "static/css/main.0fb79260.chunk.css",
-    "static/js/main.e877f885.chunk.js"
+    "static/css/main.72079cea.chunk.css",
+    "static/js/main.259f6506.chunk.js"
   ]
 }
