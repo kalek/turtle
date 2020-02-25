@@ -60,7 +60,7 @@ class App extends Component {
     const day = moment().date();
     let COUNTER = 0;
 
-    if (data && data.day <= day) {
+    if (data && data.day >= day) {
       this.setState({ data: data.data });
     } else {
       if (instruments[`activeCard${activeCard}`].length) {
